@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: catarse-backend
+
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017}
+      database: ${MONGODB_DATABASE:catarsedb}
+      auto-index-creation: true
+
+server:
+  port: ${PORT:8080}
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    com.catarse: DEBUG
+    org.springframework.data.mongodb.core: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
