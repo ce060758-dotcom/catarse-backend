@@ -1,4 +1,12 @@
 package com.catarse.backend.exception;
 
-public class ResourceNotFoundException {
+public class ResourceNotFoundException extends RuntimeException {
+
+    public ResourceNotFoundException(String message) {
+        super(message);
+    }
+
+    public ResourceNotFoundException(String message, Throwable cause) {
+        super(message, cause);
+    }
 }
