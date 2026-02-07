@@ -1,0 +1,13 @@
+﻿{
+    "metaFinanceira":  5000,
+    "tags":  [
+                 "teste",
+                 "sucesso"
+             ],
+    "categoria":  "Tecnologia",
+    "descricao":  "Testando API que está rodando",
+    "criadorId":  "test_final",
+    "dataLimite":  "2026-12-31",
+    "titulo":  "Projeto Teste Final",
+    "imagemUrl":  "https://exemplo.com/sucesso.jpg"
+}
